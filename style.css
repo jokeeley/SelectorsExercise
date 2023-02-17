@@ -1,0 +1,114 @@
+/* Question 1 */
+body{
+    background-color: #CED4D8;
+}
+
+/* Question 2 */
+h1{
+    color: #AC6AC7
+}
+
+/* Question 3 */
+h2{
+    color: rgb(255, 165, 0);
+}
+
+/* Question 4 */
+li{
+    color: blue;
+}
+
+/* Question 5 */
+p{
+    background-color: gold;
+}
+
+/* Question 6 */
+input[type="text"]{
+    border: 5px dotted pink;
+}
+input[type="email"]{
+    border: 5px dotted pink;
+}
+
+/* Question 7 */
+.first{
+    background-color: #fff;
+}
+
+/* Question 8 */
+#important {
+    border: 3px dashed #00f
+}
+
+/* Question 9 */
+/* The difference between the two, the first option ONLY styles p elements that are children (no grandchildren or beyond) of a div. The second option styles all p elements that are nested within a div (including grandchildren) */
+/* div p{ 
+    font-size: 30px;
+} */
+    
+
+div > p{
+    font-size: 30px;
+}
+
+/* Question 10 */
+input[type="email"]{
+    background-color: #808080;
+}
+
+/* Question 11 */
+div:nth-of-type(3) p{
+    background-color: hotpink;
+}
+
+/* Question 12 */
+/* div:nth-last-of-type(2){ 
+    border: 7px solid rgb(255, 255, 255)
+} */
+
+/* OR */
+/* div:nth-last-of-type(3) p:last-child{
+    border: 7px solid rgb(255, 255, 255);
+} */
+
+div ~ :nth-last-of-type(odd) > p ~ p {
+    border: 7px solid rgb(255, 255, 255);
+}
+
+/* Question 13 */
+em{
+    color: seashell;
+    font: 25px;
+}
+
+/* BONUS */
+/* input[type="checkbox"]{
+    margin-left: 40px;
+} */
+
+/* OR */
+:checked {
+    margin-left: 40px;
+}
+
+/* 2 */
+label {
+    text-transform: lowercase;
+}
+
+/* 3 */
+#important::first-letter{
+    color: limegreen;
+    font-size: 90px;
+}
+
+/* 4 */
+h1:hover{
+    color: navy;
+}
+
+/* 5 */
+a:visited {
+    color: silver;
+}
